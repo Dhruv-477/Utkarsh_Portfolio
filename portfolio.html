@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh Verma Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0d17;
+            --card-bg: rgba(25, 30, 50, 0.8);
+            --accent-purple: #8a4fff;
+            --accent-blue: #4f91ff;
+            --text-main: #ffffff;
+            --text-dim: #b0b3b8;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 50% 50%, #1a1b3a 0%, #0b0d17 100%);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        h1 { font-size: 3.5rem; margin: 0; letter-spacing: -1px; }
+        .title-tag { color: var(--accent-blue); font-size: 1.2rem; font-weight: 600; text-transform: uppercase; margin-top: 10px; }
+
+        /* Glass Cards */
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 { font-size: 1.8rem; border-left: 4px solid var(--accent-purple); padding-left: 15px; margin-bottom: 25px; }
+
+        /* Skills Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .skill-item:hover { background: rgba(138, 79, 255, 0.2); transform: translateY(-5px); }
+        .skill-item h3 { margin-top: 0; color: var(--accent-blue); }
+
+        /* Timeline */
+        .timeline { border-left: 2px solid var(--accent-purple); padding-left: 30px; margin-left: 10px; }
+        .exp-item { position: relative; margin-bottom: 40px; }
+        .exp-item::before {
+            content: '';
+            position: absolute;
+            left: -41px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background: var(--accent-purple);
+            border-radius: 50%;
+        }
+
+        .date { color: var(--accent-blue); font-weight: bold; font-size: 0.9rem; }
+        .company { font-size: 1.2rem; font-weight: 700; margin: 5px 0; }
+
+        /* Contact Section */
+        .contact-info { display: flex; flex-flow: wrap; justify-content: space-around; gap: 25px;}
+        .contact-box {min-width: 200px; }
+        a { color: var(--accent-blue); text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+
+        footer { text-align: center; margin-top: 50px; padding: 20px; font-size: 0.8rem; color: var(--text-dim); }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Utkarsh Verma</h1>
+        <div class="title-tag">IT System Administrator</div>
+        <p style="color: var(--text-dim);">Noida, India</p>
+    </header>
+
+    <div class="glass-card">
+        <h2>Professional Summary</h2>
+        <p>Dedicated IT professional specializing in comprehensive system administration and support solutions[cite: 7]. Skilled in Linux server monitoring, network services management, and OS installation[cite: 9]. Over 3.4 years of progressive experience in IT support and system administration.</p>
+    </div>
+
+    <div class="glass-card">
+        <h2>Core Technical Skills</h2>
+        <div class="grid">
+            <div class="skill-item">
+                <h3>Linux</h3>
+                <p>CentOS, Server Monitoring, RHCSA</p>
+            </div>
+            <div class="skill-item">
+                <h3>Networking</h3>
+                <p>CCNA, DNS, DHCP, VLAN, SVI</p>
+            </div>
+            <div class="skill-item">
+                <h3>Server</h3>
+                <p>OS Installation, Infrastructure Maintenance</p>
+            </div>
+            <div class="skill-item">
+                <h3>Support</h3>
+                <p>Desktop, Remote Assistance, SLA Management</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <div class="exp-item">
+                <div class="date">August 2025 - Present</div>
+                <div class="company">IT System Administrator | Empathex Services</div>
+                <p>Managing comprehensive IT infrastructure and enterprise-level services in Noida[cite: 32, 33].</p>
+            </div>
+            <div class="exp-item">
+                <div class="date">August 2023 - August 2025</div>
+                <div class="company">Desktop Support Engineer | iEnergizer</div>
+                <p>Provided comprehensive desktop support, managing hardware/software issues and system maintenance[cite: 50].</p>
+            </div>
+            <div class="exp-item">
+                <div class="date">December 2022 - August 2023</div>
+                <div class="company">Desktop Support Engineer | Radical Minds Technologies</div>
+                <p>Resolved hardware/software issues and provided on-site/remote support to end users[cite: 55, 63, 64].</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2>Education & Certifications</h2>
+        <div class="grid">
+            <div class="skill-item">
+                <h3>Bachelor's Degree</h3>
+                <p>IGNOU | Political Science and Government</p>
+                <p class="date">2020 - 2024</p>
+            </div>
+            <div class="skill-item">
+                <h3>Certifications</h3>
+                <p>CCNA & RHCSA </p>
+                <p>NetworkKings | August 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2>Get In Touch</h2>
+        <div class="contact-info">
+            <div class="contact-box">
+                <strong>Email:</strong><br>
+                <a href="mailto:utkarsh8588916762@gmail.com">utkarsh8588916762@gmail.com</a>
+            </div>
+            <div class="contact-box">
+                <strong>Phone:</strong><br>
+                9650781224 | 8588916762
+            </div>
+            <div class="contact-box">
+                <strong>LinkedIn:</strong><br>
+                <a href="https://www.linkedin.com/in/utkarsh-verma-b7142822b">View Profile</a>
+            </div>
+            <div class="contact-box">
+                <strong>Location:</strong><br>
+                Delhi, India
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Ready to contribute to your IT infrastructure success.</p>
+    </footer>
+</div>
+
+</body>
+</html>
